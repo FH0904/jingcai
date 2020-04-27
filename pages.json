@@ -1,0 +1,136 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"navigationBarBackgroundColor":"#090c15",
+				"titleImage":"/static/images/icon1.png",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+							  "fontSrc": "",
+							  "text": " ",
+							  "color":"#23f4fb",
+							  "fontSize": "22",
+							  "float":"left",
+							  "width":"5px"
+							},
+							{
+							  "fontSrc": "/static/fonts/iconfont.ttf",
+							  "text": "\ue602",
+							  "color":"#23f4fb",
+							  "fontSize": "20",
+							  "float":"left"
+							},
+							{
+							  "fontSrc": "/static/fonts/iconfont.ttf",
+							  "text": "\ue848",
+							  "fontSize": "24",
+							  "color":"#23f4fb",
+							  "width":"26px"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/personal/personal",
+			"style": {
+				"navigationBarBackgroundColor":"#090c15",
+				"navigationBarTitleText":"个人资料",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+							  "type":"menu",
+							  "fontSize": "24",
+							  "color":"#FFFFFF",
+							  "width":"26px"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/wallet/wallet",
+			"style": {
+				"navigationBarBackgroundColor":"#090c15",
+				"navigationBarTitleText":"钱包",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+							  "fontSrc": "/static/fonts/iconfont1.ttf",
+							  "text": "\ue643",
+							  "fontSize": "24",
+							  "color":"#FFFFFF",
+							  "width":"26px"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path":"pages/detail/detail",
+			"style":{
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#090c15",
+				"navigationBarTitleText":"游戏竞猜"
+			}
+		},
+		{
+			"path":"pages/betsHistory/betsHistory",
+			"style":{
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#090c15",
+				"navigationBarTitleText":"投注记录"
+			}
+		}
+	    ,{
+            "path" : "pages/wallet/addBankCard/addBankCard",
+            "style" : {
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#090c15",
+				"navigationBarTitleText":"添加银行卡"
+			}
+        }
+        ,{
+            "path" : "pages/settings/settings",
+            "style" : {
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#090c15",
+				"navigationBarTitleText":"设置"
+			}
+        }
+        ,{
+            "path" : "pages/settings/changePhoneNumber/changePhoneNumber",
+            "style" : {
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#090c15",
+				"navigationBarTitleText":"修改手机号"
+			}
+        }
+        ,{
+            "path" : "pages/settings/changePassword/changePassword",
+            "style" : {
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#090c15",
+				"navigationBarTitleText":"修改密码"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

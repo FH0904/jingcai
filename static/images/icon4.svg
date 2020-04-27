@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>游戏筛选</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFF53D" offset="0%"></stop>
+            <stop stop-color="#0FD850" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="98.34944%" y2="98.34944%" id="linearGradient-2">
+            <stop stop-color="#C5FF3D" offset="0%"></stop>
+            <stop stop-color="#00EA98" offset="100%"></stop>
+        </linearGradient>
+        <path d="M13,9 C13,8.44771525 13.4477153,8 14,8 L18,8 C18.5522847,8 19,8.44771525 19,9 L24,9 C25.6568542,9 27,10.3431458 27,12 L27,20 C27,21.6568542 25.6568542,23 24,23 L8,23 C6.34314575,23 5,21.6568542 5,20 L5,12 C5,10.3431458 6.34314575,9 8,9 L13,9 Z M8,11 C7.44771525,11 7,11.4477153 7,12 L7,20 C7,20.5522847 7.44771525,21 8,21 L24,21 C24.5522847,21 25,20.5522847 25,20 L25,12 C25,11.4477153 24.5522847,11 24,11 L8,11 Z" id="path-3"></path>
+        <filter x="-38.6%" y="-43.3%" width="177.3%" height="213.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.149019608   0 0 0 0 0.858823529   0 0 0 0 0.22745098  0 0 0 0.6 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0352941176   0 0 0 0 0.0470588235   0 0 0 0 0.0823529412  0 0 0 1 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="雷竞技2.0-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon切图" transform="translate(-24.000000, -1108.000000)">
+            <g id="游戏筛选" transform="translate(24.000000, 1108.000000)">
+                <g id="Combined-Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <path d="M11,15 L11,14 C11,13.4477153 11.4477153,13 12,13 C12.5522847,13 13,13.4477153 13,14 L13,15 L14,15 C14.5522847,15 15,15.4477153 15,16 C15,16.5522847 14.5522847,17 14,17 L13,17 L13,18 C13,18.5522847 12.5522847,19 12,19 C11.4477153,19 11,18.5522847 11,18 L11,17 L10,17 C9.44771525,17 9,16.5522847 9,16 C9,15.4477153 9.44771525,15 10,15 L11,15 Z M19,16 C18.4477153,16 18,15.5522847 18,15 C18,14.4477153 18.4477153,14 19,14 C19.5522847,14 20,14.4477153 20,15 C20,15.5522847 19.5522847,16 19,16 Z M21.0321372,18.0303642 C20.4798525,18.0303642 20.0321372,17.582649 20.0321372,17.0303642 C20.0321372,16.4780795 20.4798525,16.0303642 21.0321372,16.0303642 C21.584422,16.0303642 22.0321372,16.4780795 22.0321372,17.0303642 C22.0321372,17.582649 21.584422,18.0303642 21.0321372,18.0303642 Z" id="Combined-Shape" fill="#1EFFFA" fill-rule="evenodd"></path>
+            </g>
+        </g>
+    </g>
+</svg>

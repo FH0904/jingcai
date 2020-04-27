@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="78px" viewBox="0 0 24 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>卡片区分割右</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="100%" cy="50%" fx="100%" fy="50%" r="98.8032876%" gradientTransform="translate(1.000000,0.500000),scale(1.000000,0.300000),rotate(-179.999998),scale(1.000000,1.632518),translate(-1.000000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#0C121F" offset="0%"></stop>
+            <stop stop-color="#1A2538" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="雷竞技2.0-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.3">
+        <g id="icon切图" transform="translate(-176.000000, -1965.000000)" fill="url(#radialGradient-1)">
+            <rect id="卡片区分割右" transform="translate(188.000000, 2004.000000) scale(-1, 1) translate(-188.000000, -2004.000000) " x="176" y="1964" width="24" height="80"></rect>
+        </g>
+    </g>
+</svg>
