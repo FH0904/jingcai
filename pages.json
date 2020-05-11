@@ -126,6 +126,30 @@
 				"navigationBarTitleText":"修改密码"
 			}
         }
+        ,{
+            "path" : "pages/personal/activities/activities",
+            "style" : {
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#090c15",
+				"navigationBarTitleText":"活动"
+			}
+        }
+        ,{
+            "path" : "pages/wallet/deposit/deposit",
+            "style" : {
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#090c15",
+				"navigationBarTitleText":"存款"
+			}
+        }
+        ,{
+            "path" : "pages/wallet/record/record",
+            "style" : {
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#090c15",
+				"navigationBarTitleText":"钱包"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

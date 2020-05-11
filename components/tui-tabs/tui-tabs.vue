@@ -165,7 +165,7 @@ export default {
 			let left = (width / tabsNum - (this.winWidth / 750) * this.sliderWidth) / 2 + padding;
 			let scrollLeft = left;
 			if (this.currentTab > 0) {
-				scrollLeft = scrollLeft + (width / tabsNum) * this.currentTab;
+				scrollLeft = scrollLeft + (width / tabsNum) * this.currentTab * .82;
 			}
 			this.scrollLeft = scrollLeft;
 		},
@@ -187,7 +187,7 @@ export default {
 
 <style>
 .tui-tabs-view {
-	width: 100%;
+	width: 85%;
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;

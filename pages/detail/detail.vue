@@ -210,148 +210,17 @@
 									</view>
 									<view class="content">
 										<view class="content__btn--betMax">
-											<view>
+											<view class="content__btn_max">
 												最大投注
 											</view>
 											<view class="limit-stake">
 												1000
 											</view>
 										</view>
-										<view class="content__btn--delete" @click="delInput">
+										<view class="content__btn--delete" @click="delInput" v-if="isClick">
 											<view class="delete-icon"></view>
 										</view>
-										<view class="content__btn--confirm">
-											<view>确认</view>
-										</view>
-									</view>
-								</view>
-							</view>
-						</view>
-						<view class="odds-list">
-							<view class="odds-item" @click="showKeyboard">
-								<view class="odds-list-line"></view>
-								<view class="remove-odds">
-									<view class="remove-odds-icon"></view>
-								</view>
-								<view class="odds-item-match">
-									<view class="odds-name">
-										否
-									</view>
-									<view>
-										第二局 出现超级兵
-									</view>
-									<view>
-										IG - VS - VG
-									</view>
-								</view>
-								<view class="odds-item-money">
-									<view class="item-money">
-										<view class="money-odds">
-											@1.16
-										</view>
-										<view class="stake-input " :class="input_focus?'stake-input-focus':''">
-											<text class="input-text" :class="direction?'input-text-focus-left':'input-text-focus-right'">
-												{{amount}}
-											</text>
-										</view>
-									</view>
-									<view class="item-return">
-										预计返还
-										<text class="return-amount">1.16</text>
-									</view>
-								</view>
-							</view>
-							<view :class="keyboard_active?'keyboard-item':'keyboard-item-active'">
-								<view class="bet-keyboard">
-									<view class="content">
-										<view class='content__btn--number' @click="tab(1)">1</view>
-										<view class='content__btn--number' @click="tab(2)">2</view>
-										<view class='content__btn--number' @click="tab(3)">3</view>
-										<view class='content__btn--number' @click="tab(4)">4</view>
-										<view class='content__btn--number' @click="tab(5)">5</view>
-										<view class='content__btn--number' @click="tab(6)">6</view>
-										<view class='content__btn--number' @click="tab(7)">7</view>
-										<view class='content__btn--number' @click="tab(8)">8</view>
-										<view class='content__btn--number' @click="tab(9)">9</view>
-										<view class='content__btn--number' @click="tab(0)">0</view>
-									</view>
-									<view class="content">
-										<view class="content__btn--betMax">
-											<view>
-												最大投注
-											</view>
-											<view class="limit-stake">
-												1000
-											</view>
-										</view>
-										<view class="content__btn--delete" @click="delInput">
-											<view class="delete-icon"></view>
-										</view>
-										<view class="content__btn--confirm">
-											<view>确认</view>
-										</view>
-									</view>
-								</view>
-							</view>
-						</view>
-						<view class="odds-list">
-							<view class="odds-item" @click="showKeyboard">
-								<view class="odds-list-line"></view>
-								<view class="remove-odds">
-									<view class="remove-odds-icon"></view>
-								</view>
-								<view class="odds-item-match">
-									<view class="odds-name">
-										否
-									</view>
-									<view>
-										第二局 出现超级兵
-									</view>
-									<view>
-										IG - VS - VG
-									</view>
-								</view>
-								<view class="odds-item-money">
-									<view class="item-money">
-										<view class="money-odds">
-											@1.16
-										</view>
-										<view class="stake-input " :class="input_focus?'stake-input-focus':''">
-											<text class="input-text" :class="direction?'input-text-focus-left':'input-text-focus-right'">
-												{{amount}}
-											</text>
-										</view>
-									</view>
-									<view class="item-return">
-										预计返还
-										<text class="return-amount">1.16</text>
-									</view>
-								</view>
-							</view>
-							<view :class="keyboard_active?'keyboard-item':'keyboard-item-active'">
-								<view class="bet-keyboard">
-									<view class="content">
-										<view class='content__btn--number' @click="tab(1)">1</view>
-										<view class='content__btn--number' @click="tab(2)">2</view>
-										<view class='content__btn--number' @click="tab(3)">3</view>
-										<view class='content__btn--number' @click="tab(4)">4</view>
-										<view class='content__btn--number' @click="tab(5)">5</view>
-										<view class='content__btn--number' @click="tab(6)">6</view>
-										<view class='content__btn--number' @click="tab(7)">7</view>
-										<view class='content__btn--number' @click="tab(8)">8</view>
-										<view class='content__btn--number' @click="tab(9)">9</view>
-										<view class='content__btn--number' @click="tab(0)">0</view>
-									</view>
-									<view class="content">
-										<view class="content__btn--betMax">
-											<view>
-												最大投注
-											</view>
-											<view class="limit-stake">
-												1000
-											</view>
-										</view>
-										<view class="content__btn--delete" @click="delInput">
+										<view class="content__btn--delete" v-else>
 											<view class="delete-icon"></view>
 										</view>
 										<view class="content__btn--confirm">
@@ -395,9 +264,10 @@
 				amount: '输入金额',
 				direction:true,
 				keyboard_active:true,
-				isClose:true,
+				isClose:false,
 				tabnum:1,
-				input_focus:false
+				input_focus:false,
+				isClick:false
 			}
 		},
 		methods:{
@@ -422,6 +292,7 @@
 				this.direction = false
 				this.tabnum++
 				this.amount += value
+				this.isClick =true
 				if(this.amount.length >= 7){
 					this.amount = this.amount.substr(0,6);
 				}
@@ -434,6 +305,8 @@
 				if(this.amount.length === 0){
 					this.amount = "输入金额"
 					this.direction = true
+					this.tabnum = 1
+					this.isClick = false
 				}
 			}
 		},
@@ -445,11 +318,32 @@
 		      this.scrollH = res.windowHeight-uni.upx2px(414)
 		    }
 		  })
-		},
+		}
 	}
 </script>
 
 <style lang="less">
+	.tipsContent1 {
+	  width: 100%;
+	  height: 502upx;
+	  background-color: #FFFFFF;
+	  border-radius: 15upx;
+	  display: flex;
+	  // justify-content: center;
+	  flex-direction: column;
+	  align-items: center;
+	  position: relative;
+	
+	  .buttom {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    color: #666666;
+	    font-size: 30upx;
+	    padding-bottom: 40upx;
+	  }
+	}
+	
 	.betting-info{
 		overflow-y: visible;
 		width: 100%;
@@ -979,6 +873,9 @@
 								display: flex;
 								justify-content: center;
 								align-items: center;
+								.content__btn_max{
+									font-size: 32rpx;
+								}
 								.limit-stake{
 									font-size: 26rpx;
 									line-height: 28rpx;
@@ -1013,6 +910,9 @@
 								    display: flex;
 								    justify-content: center;
 								    align-items: center;
+									view{
+										font-size: 32rpx;
+									}
 							}
 						}
 					}

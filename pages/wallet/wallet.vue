@@ -17,7 +17,7 @@
 			<view class="table-title">
 				选择付款方式
 			</view>
-			<view class="grid-content">
+			<view class="grid-content" @click="toNav('/pages/wallet/deposit/deposit')">
 				<view class="grid-item" v-for="(item,index) in gridData" :key="index">
 					<image :src="item.img" mode=""></image>
 					<view class="grid-text">
@@ -63,6 +63,11 @@
 					url
 				})
 			}
+		},
+		onNavigationBarButtonTap(e) {
+			uni.navigateTo({
+				url:'/pages/wallet/record/record'
+			})
 		}
 	}
 </script>

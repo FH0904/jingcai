@@ -20,7 +20,60 @@
 			</swiper-item>
 			<swiper-item>
 				<view class="swiper-item">
-					
+					<view class="order-list">
+						<view class="order-card">
+							<view class="odds-detail">
+								<view class="odds-detail-header">
+									<image src="../../static/images/icon6.svg" mode=""></image>
+									<view class="title">
+										获胜者 Reverse Heaven
+									</view>
+									<view class="type">
+										第一局 赛前
+									</view>
+									<view class="flag-icon">
+										<text>输</text>
+									</view>
+								</view>
+								<view class="odds-detail-list">
+									<view>Reverse Heaven - VS - LGD.int</view>
+									<view style="height: 8rpx;"></view>
+									<view>开始时间: 2020-04-13 15:00:00</view>
+									<view style="height: 8rpx;"></view>
+									<view>赔率: 3.61</view>
+									<view style="height: 8rpx;"></view>
+								</view>
+							</view>
+							<view class="order-info">
+								<view class="order-info-row">
+									<view class="order-title">
+										单注
+									</view>
+									<view class="order-status CLOSE">
+										已结算
+									</view>
+								</view>
+								<view style="height: 12rpx;"></view>
+								<view class="order-info-row">
+									<view class="order-info-row-lebal">投注金额:
+									<text class="total-stake">10</text>
+									</view>
+									<view class="order-info-row-lebal">盈利
+										<text class="bonus-lose">0.00</text>
+									</view>
+								</view>
+								<view style="height: 36rpx;"></view>
+								<view class="order-info-row">
+									<view>
+										订单号: 10c2b0199c6a0315a1ce
+									</view>
+									<view>
+										2020-04-13 12:03:17
+									</view>
+								</view>
+							</view>
+						</view>
+					</view>
 				</view>
 			</swiper-item>
 		</swiper>
@@ -97,6 +150,102 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+			}
+		}
+	}
+	.order-list{
+		position: absolute;
+		top: 90rpx;
+		width: 100%;
+		height: 100%;
+		padding: 4px 8px;
+		box-sizing: border-box;
+		.order-card{
+			margin-bottom: 8rpx;
+			padding: 32rpx 12rpx 20rpx;
+			background: #151b29;
+			border-radius: 8rpx;
+			font-size: 24rpx;
+			text-align: left;
+			color: #758bb5;
+			.odds-detail{
+				margin-bottom: 32rpx;
+				border-bottom: 1px dashed #252f44;
+				.odds-detail-header{
+					position: relative;
+					display: flex;
+					align-items: center;
+					padding-bottom: 12rpx;
+					padding-left: 20rpx;
+					padding-right: 20rpx;
+					border-bottom: 1px solid #252f44;
+					image{
+						width: 40rpx;
+						height: 40rpx;
+					}
+					.title{
+						margin-left: 12rpx;
+						color: #fff;
+						font-size: 14px;
+						word-break: break-word;
+					}
+					.type{
+						margin-left: auto;
+						text-align: right;
+						word-break: keep-all
+					}
+					.flag-icon{
+						position: absolute;
+						right: 36rpx;
+						bottom: -68rpx;
+						background: url(../../static/images/icon30.svg) no-repeat;
+						color: #cfdefc;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						background-position: 50%;
+						background-repeat: no-repeat;
+						width: 56rpx;
+						height: 68rpx;
+						font-weight: 700;
+						font-size: 28rpx;
+					}
+				}
+				.odds-detail-list{
+					padding: 24rpx 20rpx;
+					color: #526585;
+				}
+			}
+			.order-info{
+				padding-left: 20rpx;
+				padding-right: 20rpx;
+				.order-info-row{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					word-break: break-word;
+					.order-title{
+						color: #fff;
+						font-size: 28rpx;
+					}
+					.order-status{
+						padding-left: 12rpx;
+						padding-right: 6rpx;
+						border-radius: 4rpx;
+						font-size: 28rpx;
+						border: 1px solid #526585;
+						color: #758bb5;
+					}
+					.order-info-row-lebal{
+						color: #bacef1;
+						.total-stake{
+							color: #FFFFFF;
+						}
+						.bonus-lose{
+							color: #758bb5;
+						}
+					}
+				}
 			}
 		}
 	}

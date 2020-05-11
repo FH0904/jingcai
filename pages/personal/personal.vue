@@ -53,7 +53,7 @@
 				<uni-list>
 					<uni-list-item  note="">
 						<template>
-						    <view style="display: flex;align-items: center;">
+						    <view style="display: flex;align-items: center;" @click="toNav('/pages/personal/activities/activities')">
 						    	<image style="width: 44rpx;height: 44rpx;margin-right: 30rpx;" src="/static/images/icon16.svg"></image>
 						    	<text style="color: #bacef1;font-size: 28rpx;">活动</text>
 						    </view>
