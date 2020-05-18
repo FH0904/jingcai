@@ -209,12 +209,12 @@
 										<view class='content__btn--number' @click="tab(0)">0</view>
 									</view>
 									<view class="content">
-										<view class="content__btn--betMax">
+										<view class="content__btn--betMax" @click="betMax">
 											<view class="content__btn_max">
 												最大投注
 											</view>
 											<view class="limit-stake">
-												1000
+												{{betMaxNum}}
 											</view>
 										</view>
 										<view class="content__btn--delete" @click="delInput" v-if="isClick">
@@ -223,7 +223,7 @@
 										<view class="content__btn--delete" v-else>
 											<view class="delete-icon"></view>
 										</view>
-										<view class="content__btn--confirm">
+										<view class="content__btn--confirm" @click="showKeyboard">
 											<view>确认</view>
 										</view>
 									</view>
@@ -267,7 +267,8 @@
 				isClose:false,
 				tabnum:1,
 				input_focus:false,
-				isClick:false
+				isClick:false,
+				betMaxNum:"500",
 			}
 		},
 		methods:{
@@ -308,6 +309,9 @@
 					this.tabnum = 1
 					this.isClick = false
 				}
+			},
+			betMax(){
+				this.amount = this.betMaxNum
 			}
 		},
 		onLoad(options) {

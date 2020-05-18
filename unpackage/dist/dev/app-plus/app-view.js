@@ -504,6 +504,7 @@ var render = function() {
                           "43-" + $31,
                           "a-refresher-triggered"
                         ),
+                        "upper-threshold": 200,
                         _i: "43-" + $31
                       },
                       on: {
@@ -6173,7 +6174,14 @@ var render = function() {
                                         "v-uni-view",
                                         {
                                           staticClass: _vm._$g(110, "sc"),
-                                          attrs: { _i: 110 }
+                                          attrs: { _i: 110 },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.$handleViewEvent(
+                                                $event
+                                              )
+                                            }
+                                          }
                                         },
                                         [
                                           _c(
@@ -6194,11 +6202,7 @@ var render = function() {
                                               staticClass: _vm._$g(112, "sc"),
                                               attrs: { _i: 112 }
                                             },
-                                            [
-                                              _vm._v(
-                                                "\n\t\t\t\t\t\t\t\t\t\t\t1000\n\t\t\t\t\t\t\t\t\t\t"
-                                              )
-                                            ]
+                                            [_vm._v(_vm._$g(112, "t0-0"))]
                                           )
                                         ],
                                         1
@@ -6243,7 +6247,14 @@ var render = function() {
                                         "v-uni-view",
                                         {
                                           staticClass: _vm._$g(117, "sc"),
-                                          attrs: { _i: 117 }
+                                          attrs: { _i: 117 },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.$handleViewEvent(
+                                                $event
+                                              )
+                                            }
+                                          }
                                         },
                                         [
                                           _c(

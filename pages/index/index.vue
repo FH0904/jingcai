@@ -68,6 +68,7 @@
 						@refresherrefresh="onRefresh"
 						@refresherrestore="onRestore"
 						@refresherabort="onAbort"
+						:upper-threshold="200"
 					>
 						<view class="list">
 							<view class="list-item" @click="toDetail">
